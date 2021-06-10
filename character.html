@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<script src="{{ base.url | prepend: site.url }}/assets/js/character.js"></script>
+
+<table>
+  <tr>
+    <td>Strength</td>
+    <td><input type="number" id="strength" /></td>
+  </tr>
+</table>
+
+<h2>Abilities</h2>
+<button id="addAbility" onclick="addAbility()">Add Ability</button>
+<div id="characterAbilities">
+  <select class="abilitySelect float-start"></select>
+</div>

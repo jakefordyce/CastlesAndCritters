@@ -267,7 +267,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed
-  jekyll-theme-architect
+  jekyll-theme-tactile
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

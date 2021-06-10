@@ -1,4 +1,22 @@
 ---
 layout: default
-title: Abilities
 ---
+
+<h1>Abilities</h1>
+
+<div>
+  {% for ability in site.data.abilities %}
+    <div class="ability">
+      {{ ability.name }} -
+      {{ ability.text }}
+    </div>
+    {% if ability.masteries != empty %}
+      {% for mastery in ability.masteries %}
+        <div class="mastery">
+          {{mastery.name}}
+          {{mastery.text}}
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</div>
